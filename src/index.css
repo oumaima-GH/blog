@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+/* index.css */
+
+/* Styling for the App component */
+.App {
+  text-align: center;
+}
+
+/* Styling for the Navbar component */
+nav {
+  background-color: #463939;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between; /* This will place the logo to the left and links to the right */
+  align-items: center;
+}
+
+.nav-left {
+  justify-content: left;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+/* Styling for the Home component */
+.home {
+  padding: 2rem;
+
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+}
+/* Home.css */
+
+.home {
+  padding: 2rem;
+  text-align: center;
+}
+
+.blog-preview {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.blog-preview:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+.blog-preview h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.blog-preview p {
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  /* Styles for screens with a maximum width of 768px */
+  nav {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .nav-links-container {
+    margin-top: 1rem; /* Add some space between links and the logo */
+  }
+}
